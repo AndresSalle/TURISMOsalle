@@ -1,0 +1,416 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #f5f7f9;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.Top {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #f5f7f9;
+    width: 100%;
+    z-index: 5;
+    margin-top: 65px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: solid;
+    border-width: 0px 0px 0.4px 0px;
+    border-color: #acaeb1;
+}
+
+.Back {
+    display: flex;
+    width: 40px;
+    margin-left: 90px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.Back:hover {
+    background-color: #F08A43;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.TitleA {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-left: -80px;
+}
+
+#T-Title {
+    font-family: 'Inter', static;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.Corpse {
+    padding-top: 35px;
+    margin-bottom: 40px;
+    width: 620px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Price {
+    width: 100%;
+    font-family: 'Inter', static;
+    padding-top: 120px;
+}
+
+.TopA {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Title {
+    font-size: 18px;
+    font-weight: 550;
+}
+
+#Subtitle {
+    font-size: 14px;
+    color: #8c8e90;
+    font-weight: 400;
+}
+
+.Slider {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 10px;
+}
+
+.Barra1 {
+    height: 8px;
+    position: absolute;
+    align-items: center;
+    z-index: 2;
+    border-radius: 10px;
+    background-color: #2ABDC0;
+    inset: 0;           
+}
+
+.Bolita {
+    position: absolute;
+    z-index: 3;
+    border-radius: 30px;
+    background-color: #f5f7f9;
+    border-style: solid;
+    border-color: #2ABDC0;
+    border-width: 2px;
+    width: 16px;
+    height: 16px;
+}
+
+.Barra2 {
+    height: 8px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #ffd643;
+    z-index: 1;
+    inset: 0;           
+}
+
+.BottomA {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Bo-text {
+    font-weight: 400;
+    font-size: 12px;
+    color: #8c8e90;
+}
+
+.Categories,
+.Rating,
+.Duration,
+.Buttons {
+    font-family: 'Inter', static;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Cuadros {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 12px;
+    width: 100%;
+}
+
+.Cuadro1 {
+    height: 95px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    border-style: solid;
+    border-color: #d8d8db;
+    border-width: 2px;
+    transition: ease 0.3s;
+}
+
+#Cuadro1A,
+#Cuadro1B,
+#Cuadro1C,
+#Cuadro1D,
+#Cuadro1E,
+#Cuadro1F {
+    background-color: #f5f7f9;
+}
+
+#Cuadro1A.activo,
+#Cuadro1B.activo,
+#Cuadro1C.activo,
+#Cuadro1D.activo,
+#Cuadro1E.activo,
+#Cuadro1F.activo {
+    background-color: #ecf4f4;
+    border-color: #2ABDC0;
+}
+
+.Cuadro1:hover {
+    border-color: #2ABDC0;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.Icono {
+    font-size: 30px;
+    margin: 4px 0px;
+}
+
+.Text {
+    font-size: 14px;
+    margin: 2px 0px;
+}
+
+.Cuadro2 {
+    height: 50px;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 13px;
+    border-style: solid;
+    border-color: #d8d8db;
+    border-width: 1px;
+    transition: ease 0.3s;
+    padding: 0px 10px;
+    margin: 8px 0px;
+}
+
+.Cuadro2:hover {
+    border-color: #2ABDC0;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.Left {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Selected {
+    background-color: #2ABDC0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    height: 24px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f7f9;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.Icono1 {
+    gap:-10px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-star {
+    color: #ffd643;
+    font-size: 15px;
+}
+
+.Text1 {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#Non-c {
+    color: #e7e7e9;
+}
+
+.List {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0px;
+}
+
+.Circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #f5f7f9;
+    border-style: solid;
+    border-color: #2ABDC0;
+    border-width: 1px;
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#CircleA,
+#CircleB,
+#CircleC,
+#CircleD {
+    background-color: #f5f7f9;
+}
+
+#CircleA.activo,
+#CircleB.activo,
+#CircleC.activo,
+#CircleD.activo {
+    background-color: #2ABDC0;
+}
+
+.fa-check {
+    font-size: 10px;
+    color: #f5f7f9;
+}
+
+.Text2 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+.Reset {
+    height: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    border-style: solid;
+    border-color: #d8d8db;
+    border-width: 1px;
+    transition: ease 0.3s;
+}
+
+.Reset:hover {
+    background-color: #F08A43;
+    color: #f5f7f9;
+    cursor: pointer;
+}
+
+.Apply {
+    height: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    background-color: #2ABDC0;
+    transition: ease 0.3s;
+    color: #f5f7f9;
+}
+
+.Apply:hover {
+    background-color: #49c4c6;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 770px) {
+
+    body {
+        width: 100%;
+    }
+
+    .Top {
+    margin-top: 0px;
+    padding: 10px 0px;
+}
+
+.Back {
+    margin-left: 17px;
+}
+
+.TitleA { 
+    padding-left: 80px;
+}
+
+#T-Title {
+    font-size: 17px;
+    margin-left: -50px;
+}
+
+.Corpse {
+    padding-top: 0px;
+    margin: -40px 20px 110px 20px;
+}
+
+.Buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7f9;
+    width: 100%;
+    z-index: 5;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    border-style: solid;
+    border-width: 0.4px 0px 0px 0px;
+    border-color: #acaeb1;
+}
+
+.Reset, 
+.Apply {
+    width: 45%;
+    margin: 0;
+}
+
+}
