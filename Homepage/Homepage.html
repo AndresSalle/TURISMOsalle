@@ -1,0 +1,273 @@
+<!doctype html>
+<head>
+    <link rel="icon" href="Imagenes/Colombia.png">
+    <title> Bogotá Explorer</title>
+    <link rel="Stylesheet" href="Styles/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700
+    &family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
+    <script src="Java/Java.js">
+    </script>
+</head>
+<body>
+    <div class="Top">
+        <div class="Left">
+            <div id="Bandera"> 🇨🇴 </div>
+            <h2 id="Page"> Bogotá Explorer </h2>
+        </div>
+        <div class="Right">
+            <div class="Sec">
+            <i class="fa-solid fa-house"></i>
+            <h3 id="Text1" class="Text1C"> Home </h3>
+            </div>
+            <div class="Sec">
+            <i class="fa-solid fa-compass"></i>
+            <h3 id="Text1"  class="Text1C"> Explore </h3>
+            </div>
+            <div class="Sec">
+            <i class="fa-solid fa-calendar"></i>
+            <h3 id="Text1"  class="Text1C"> Tours </h3>
+            </div>
+            <div class="Sec">
+            <i class="fa-solid fa-heart"></i>
+            <h3 id="Text1"  class="Text1C"> Favorites </h3>
+            </div>
+            <div class="Sec">
+            <i class="fa-solid fa-user"></i>
+            <h3 id="Text1"  class="Text1C"> Profile </h3>
+            </div>
+        </div>
+    </div>
+    <div class="Top-Mid">
+        <div class="A-1">
+            <div id="T-1">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3 id="Text1"> Bogotá, Colombia</h3>
+            </div>
+            <div id="T-2">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+        <div class="A-Text">
+            <h2 id="Text2"> Hello, Explorer! </h2>
+            <div id="Mano"> 👋 </div>
+        </div>
+        <div class="B-Text">
+            <p id="Text1"> Let's discover Bogotá's historic downtown </p>
+        </div>
+        <div class="Top-Bottom">
+            <div class="Searchbar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3 id="Text1"> Where are you going? </h3>
+            </div>
+            <div class="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="Bottom">
+        <div class="B-A">
+            <h2 id="Text3"> Featured Places </h2>
+            <h3 id="Text4"> View All </h3>
+        </div>
+        <div class="B-B">
+            <div class="Tarjeta1" onmouseenter="toggleImage1(true)" onmouseleave="toggleImage1(false)">
+                    <div class="OverIt1">
+                        <div class="Heart1" onclick="toggleHeart1()">
+                            <i id="heart0" class="fa-regular fa-heart"></i>
+                            <i id="heartA" class="fa-solid fa-heart" style="display: none;"></i>
+                        </div>
+                        <div class="Price">
+                            <h3> $12 </h3>
+                        </div>
+                    </div>
+                    <img class="ImagenR" src="Imagenes/Monserrate.jpg">
+                    <img id="Gif1" src="Imagenes/Gif1.gif" style="display: none;">
+                    <div class="UnderIt1">
+                        <h2 id="TextGen"> Monserrate </h2>
+                        <div class="Location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p id="Text-L"> Cerro de Monserrate, Bogotá </p>
+                        </div>
+                        <div class="Stars">
+                            <i class="fa-solid fa-star"></i>
+                            <h2 id="Text5"> 4.8 </h2>
+                            <p id="Text-L1"> (3246 reviews) </p>
+                        </div>
+                    </div>
+            </div>
+             <div class="Tarjeta1" onmouseenter="toggleImage2(true)" onmouseleave="toggleImage2(false)">
+                    <div class="OverIt1">
+                        <div class="Heart1" onclick="toggleHeart2()">
+                            <i class="fa-regular fa-heart"></i>
+                            <i id="heartB" class="fa-solid fa-heart" style="display: none;"></i>
+                        </div>
+                        <div class="Price">
+                            <h3> Free </h3>
+                        </div>
+                    </div>
+                    <img class="ImagenR1" src="Imagenes/Plaza.jpg">
+                    <img id="Gif2" src="Imagenes/Gif2.gif" style="display: none;">
+                    <div class="UnderIt1">
+                        <h2 id="TextGen"> Plaza Bolívar </h2>
+                        <div class="Location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p id="Text-L"> La Candelaria, Bogotá </p>
+                        </div>
+                        <div class="Stars">
+                            <i class="fa-solid fa-star"></i>
+                            <h2 id="Text5"> 4.7 </h2>
+                            <p id="Text-L1"> (2850 reviews) </p>
+                        </div>
+                    </div>
+            </div>
+             <div class="Tarjeta1" onmouseenter="toggleImage3(true)" onmouseleave="toggleImage3(false)">
+                    <div class="OverIt1">
+                        <div class="Heart1" onclick="toggleHeart3()">
+                            <i class="fa-regular fa-heart"></i>
+                            <i id="heartC" class="fa-solid fa-heart" style="display: none;"></i>
+                        </div>
+                        <div class="Price">
+                            <h3> $3 </h3>
+                        </div>
+                    </div>
+                    <img class="ImagenR1" src="Imagenes/Jardin.jpg">
+                    <img id="Gif3" src="Imagenes/Gif3.gif" style="display: none;">
+                    <div class="UnderIt1">
+                        <h2 id="TextGen"> Jardín Botánico </h2>
+                        <div class="Location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p id="Text-L"> José Celestino Mutis, Bogotá </p>
+                        </div>
+                        <div class="Stars">
+                            <i class="fa-solid fa-star"></i>
+                            <h2 id="Text5"> 4.9 </h2>
+                            <p id="Text-L1"> (4030 reviews) </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="B-A">
+            <h2 id="Text3"> Popular Attractions </h2>
+            <h3 id="Text4"> View All </h3>
+        </div>
+        <div class="B-B1">
+            <div class="Tarjeta2" onmouseenter="toggleImage4(true)" onmouseleave="toggleImage4(false)">
+                    <div class="OverIt2">
+                        <div class="Heart2" onclick="toggleHeart4()">
+                            <i class="fa-regular fa-heart"></i>
+                            <i id="heartD" class="fa-solid fa-heart" style="display: none;"></i>
+                        </div>
+                        <div class="Price1">
+                            <h3> $5 </h3>
+                        </div>
+                    </div>
+                    <img class="ImagenR2" src="Imagenes/Oro.jpg">
+                    <img id="Gif4" src="Imagenes/Gif4.gif" style="display: none;">
+                    <div class="UnderIt2">
+                        <h2 id="TextGen" class="TextGen1"> Gold Museum </h2>
+                        <div class="Location1">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p id="Text-L"> La Candelaria, Bogotá </p>
+                        </div>
+                        <div class="Stars1">
+                            <i class="fa-solid fa-star"></i>
+                            <h2 id="Text5"> 4.9 </h2>
+                            <p id="Text-L1"> (4120 reviews) </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="Tarjeta2" onmouseenter="toggleImage5(true)" onmouseleave="toggleImage5(false)">
+                    <div class="OverIt2">
+                        <div class="Heart2" onclick="toggleHeart5()">
+                            <i class="fa-regular fa-heart"></i>
+                            <i id="heartE" class="fa-solid fa-heart" style="display: none;"></i>
+                        </div>
+                        <div class="Price1">
+                            <h3> Free </h3>
+                        </div>
+                    </div>
+                    <img class="ImagenR2" src="Imagenes/Candelaria.jpg">
+                    <img id="Gif5" src="Imagenes/Gif5.gif" style="display: none;">
+                    <div class="UnderIt2">
+                        <h2 id="TextGen" class="TextGen1"> La Candelaria </h2>
+                        <div class="Location1">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p id="Text-L"> Historic Downtown </p>
+                        </div>
+                        <div class="Stars1">
+                            <i class="fa-solid fa-star"></i>
+                            <h2 id="Text5"> 4.6 </h2>
+                            <p id="Text-L1"> (1980 reviews) </p>
+                        </div>
+                    </div>
+            </div>
+             <div class="Tarjeta2" onmouseenter="toggleImage6(true)" onmouseleave="toggleImage6(false)">
+                    <div class="OverIt2">
+                        <div class="Heart2" onclick="toggleHeart6()">
+                            <i class="fa-regular fa-heart"></i>
+                            <i id="heartF" class="fa-solid fa-heart" style="display: none;"></i>
+                        </div>
+                        <div class="Price1">
+                            <h3> $2 </h3>
+                        </div>
+                    </div>
+                    <img class="ImagenR2" src="Imagenes/Museo.jpg">
+                    <img id="Gif6" src="Imagenes/Gif6.gif" style="display: none;">
+                    <div class="UnderIt2">
+                        <h2 id="TextGen" class="TextGen1"> Museo Nacional </h2>
+                        <div class="Location1">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p id="Text-L"> Centro, Bogotá </p>
+                        </div>
+                        <div class="Stars1">
+                            <i class="fa-solid fa-star"></i>
+                            <h2 id="Text5"> 4.8 </h2>
+                            <p id="Text-L1"> (2999 reviews) </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="B-B2">
+            <div class="Tarjeta3">
+                    <h1 id="Iconos"> 🗺️ </h1>
+                    <div class="UnderIt3">
+                        <h2 id="TextGen"> Group Tours </h2>
+                        <div class="Location2">
+                            <p id="Text-L"> Join guided tours </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="Tarjeta3">
+                    <h1 id="Iconos"> 🏨 </h1>
+                    <div class="UnderIt3">
+                        <h2 id="TextGen"> Hotels </h2>
+                        <div class="Location2">
+                            <p id="Text-L"> Find your stay </p>
+                        </div>
+                    </div>
+            </div>
+             <div class="Tarjeta3">
+                    <h1 id="Iconos"> 🍽️ </h1>
+                    <div class="UnderIt3">
+                        <h2 id="TextGen"> Restaurants </h2>
+                        <div class="Location2">
+                            <p id="Text-L"> Taste local food </p>
+                        </div>
+                    </div>
+            </div>
+              <div class="Tarjeta3">
+                    <h1 id="Iconos"> 📍 </h1>
+                    <div class="UnderIt3">
+                        <h2 id="TextGen"> Map View </h2>
+                        <div class="Location2">
+                            <p id="Text-L"> Explore the map </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>

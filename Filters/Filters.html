@@ -1,0 +1,215 @@
+<!doctype html>
+<head>
+    <link rel="icon" href="Images/Colombia.png">
+    <title> Bogotá Explorer</title>
+    <link rel="Stylesheet" href="Styles/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700
+    &family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
+    <script src="Java/Java.js">
+    </script>
+</head>
+<body>
+
+<div class="Top">
+    <div class="Back">
+        <i class="fa-solid fa-arrow-left"></i>
+    </div>
+    <div class="TitleA">
+        <h1 id="T-Title"> Filters </h1>
+    </div>
+</div>
+<div class="Corpse">
+    <div class="Price">
+        <div class="TopA">
+            <div class="LeftA1">
+                <h2 class="Title"> Price Range </h2>
+            </div>
+            <div class="RightA1">
+                <h3 id="Subtitle"> $0 - $100 </h3>
+            </div>
+        </div>
+        <div class="Slider">
+            <div class="Barra1"></div>
+            <div class="Bolita"></div>
+            <div class="Barra2"></div>
+        </div>
+        <div class="BottomA">
+            <div class="LeftA2">
+                <h4 id="Bo-text"> $0 </h4>
+            </div>
+            <div class="RightA2">
+                <h4 id="Bo-text"> $100+ </h4>
+            </div>
+        </div>
+    </div>
+    <div class="Categories">
+        <div class="TopA">
+            <div class="LeftA1">
+                <h2 class="Title"> Categories </h2>
+            </div>
+        </div>
+        <div class="Cuadros">
+            <div class="Cuadro1" id="Cuadro1A" onclick="changeBackground1()">
+                <div class="Icono"> 🏛️ </div>
+                <div class="Text"> Historical sites </div>
+            </div>
+            <div class="Cuadro1" id="Cuadro1B" onclick="changeBackground2()">
+                <div class="Icono"> 🖼️ </div>
+                <div class="Text"> Museums </div>
+            </div>
+            <div class="Cuadro1" id="Cuadro1C" onclick="changeBackground3()">
+                <div class="Icono"> 🌳 </div>
+                <div class="Text"> Nature </div>
+            </div>
+            <div class="Cuadro1" id="Cuadro1D" onclick="changeBackground4()">
+                <div class="Icono"> 🍽️ </div>
+                <div class="Text"> Food & Dining </div>
+            </div>
+            <div class="Cuadro1" id="Cuadro1E" onclick="changeBackground5()">
+                <div class="Icono"> 🏨 </div>
+                <div class="Text"> Accommodations </div>
+            </div><div class="Cuadro1" id="Cuadro1F" onclick="changeBackground6()">
+                <div class="Icono"> 🗺️ </div>
+                <div class="Text"> Guided Tours </div>
+            </div>
+        </div>
+    </div>
+    <div class="Rating">
+        <div class="TopA">
+            <div class="LeftA1">
+                <h2 class="Title"> Minimum Rating </h2>
+            </div>
+        </div>
+        <div class="Cuadro2"  onclick=" changePole1();">
+            <div class="Left">
+                <div class="Icono1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="Text1"> 5.0 & up </div>
+            </div>
+            <div class="Right">
+                <div class="Selected" id="Cuadro3A" style="display: none;"> 
+                    Selected
+                </div>
+            </div>
+        </div>
+        <div class="Cuadro2" onclick="changePole2();">
+            <div class="Left">
+                <div class="Icono1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star" id="Non-c"></i>
+                </div>
+                <div class="Text1"> 4.0 & up </div>
+            </div>
+            <div class="Right">
+                <div class="Selected" id="Cuadro3B" style="display: none;"> 
+                    <h4 id="Text3"> Selected </h4>
+                </div>
+            </div>
+        </div>
+        <div class="Cuadro2" onclick="changePole3();">
+            <div class="Left">
+                <div class="Icono1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star" id="Non-c"></i>
+                    <i class="fa-solid fa-star" id="Non-c"></i>
+                </div>
+                <div class="Text1"> 3.0 & up </div>
+            </div>
+            <div class="Right">
+                <div class="Selected" id="Cuadro3C" style="display: none;"> 
+                    <h4 id="Text3"> Selected </h4>
+                </div>
+            </div>
+        </div>
+        <div class="Cuadro2" onclick="changePole4();">
+            <div class="Left">
+                <div class="Icono1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star" id="Non-c"></i>
+                    <i class="fa-solid fa-star" id="Non-c"></i>
+                    <i class="fa-solid fa-star" id="Non-c"></i>
+                </div>
+                <div class="Text1"> 2.0 & up </div>
+            </div>
+            <div class="Right">
+                <div class="Selected" id="Cuadro3D" style="display: none;"> 
+                    <h4 id="Text3"> Selected </h4>
+                </div>
+            </div>
+        </div>
+        <div class="Cuadro2" onclick="changePole5();">
+            <div class="Left">
+                <div class="Icono1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star" id="Non-c"></i>
+                    <i class="fa-solid fa-star" id="Non-c"></i>
+                    <i class="fa-solid fa-star" id="Non-c"></i>
+                    <i class="fa-solid fa-star" id="Non-c"></i>
+                </div>
+                <div class="Text1"> 1.0 & up </div>
+            </div>
+            <div class="Right">
+                <div class="Selected" id="Cuadro3E" style="display: none;"> 
+                    <h4 id="Text3"> Selected </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Duration">
+        <div class="TopA">
+            <div class="LeftA1">
+                <h2 class="Title"> Duration </h2>
+            </div>
+        </div>
+        <div class="List">
+            <div class="Circle" id="CircleA" onclick="changeBackg1()">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h4 class="Text2"> Under 1 hour </h4>
+        </div>
+        <div class="List">
+            <div class="Circle" id="CircleB" onclick="changeBackg2()">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h4 class="Text2"> 1-3 hours </h4>
+        </div>
+        <div class="List">
+            <div class="Circle" id="CircleC" onclick="changeBackg3()">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h4 class="Text2"> 3-5 hours </h4>
+        </div>
+        <div class="List">
+            <div class="Circle" id="CircleD" onclick="changeBackg4()">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h4 class="Text2"> Full day </h4>
+        </div>
+    </div>
+    <div class="Buttons">
+        <div class="Reset">
+            <h3 class="Text2"> Reset All </h3>
+        </div>
+         <div class="Apply">
+            <h3 class="Text2"> Apply Filters </h3>
+        </div>
+    </div>
+</div>
+
+
+</body>

@@ -1,0 +1,807 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #f5f7f9;
+    overflow-x: hidden;
+}
+
+.Top {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    height: 60px;
+    max-height: 60px;
+    width: 100%;
+    background-color: #ffff;
+    align-items: center;
+    margin: 0;
+    z-index: 2;
+}
+
+.Left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    gap: 8px;
+    margin-right: 10px;
+}
+
+.Left:hover {
+    cursor: pointer;
+}
+
+#Bandera {
+    align-items: center;
+    font-size: 24px;
+}
+
+#Page {
+    align-items: center;
+    font-family: 'Inter', static;
+    font-size: 19.5px;
+}
+
+.Right {
+    display: flex;
+    gap: 7px;
+    margin-right: 80px;
+    align-items: center;
+    color: #818793;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.Sec {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 42px;
+    width: 110px;
+    justify-content: center;
+}
+
+.Sec:hover {
+    background-color: #E6E9EE;
+    border-radius: 18px;
+    color: #3c4248;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+#Text1 {
+    font-family: 'Inter', static;
+    font-weight: 400;
+}
+
+.fa-solid {
+    font-size: 18px;
+}
+
+.Top-Mid {
+    width: 100%;
+    height: 260px;
+    border-radius: 0 0 30px 30px;
+    background: linear-gradient(to right, #2ABDC0, #35ABDF);
+    background-color: #33B0D5;
+    padding-top: 70px;
+    padding-bottom: 2px;
+}
+
+.A-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffff;
+    padding-top: 24px;
+    margin-left: 62px;
+    margin-right: 60px;
+}
+
+#T-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', static;
+    font-size: 12px;
+}
+
+#T-2 {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+}
+
+#T-2:hover {
+    background-color: #65BEE4;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.A-Text {
+    display: flex;
+    align-items: center;
+    margin-left: 57px;
+    gap: 10px;
+    margin-bottom: -30px;
+}
+
+#Text2 {
+    font-family: 'Inter', static;
+    color: #ffff;
+    font-size: 28px;
+}
+
+#Mano {
+    font-size: 30px;
+}
+
+.B-Text {
+    color: #ffff;
+    margin-top: 18px;
+    padding-left: 57px;
+    font-size: 15px;
+}
+
+.Top-Bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    height: 42px;
+    margin-right: 67px;
+}
+
+.Searchbar {
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 12px;
+    margin-left: 55px;
+    width: 1219px;
+    color: #848589;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.Searchbar:active {
+    border: 1px solid #c0c0c0; 
+    box-shadow:
+      0 0 0 2px #ffffff;
+}
+
+.Searchbar:hover {
+    cursor: text;
+}
+
+.fa-magnifying-glass {
+    color: #848589;
+    padding-left: 14px;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    color: #a9a9a9;
+    min-height: 45px;
+    min-width: 45px;
+    background-color: #ffff;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.Menu:hover {
+    background-color: #F08A43;
+    color: #ffff;
+    border: 1px solid #c0c0c0;
+    cursor: pointer;
+}
+
+#Text3 {
+    font-family: 'Inter', static;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+#Text4 {
+    font-family: 'Inter', static;
+    font-weight: 400;
+    font-size: 14px;
+    color: #33B0D5;
+}
+
+#Text4:hover {
+    cursor: pointer;
+}
+
+.B-A,
+.B-A1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 65px 0 65px;
+    padding-top: 15px;
+}
+
+.B-B,
+.B-B1,
+.B-B2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8px 75px;
+    gap: 15px;
+    transition: transform 0.25s ease;
+    transform-origin: top left;
+}
+
+.Tarjeta1 {
+    height: 415.63px;
+    width: 410px;
+    background-color: #ffff;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid #cccccc;
+    transition: transform 0.2s ease;
+    transform-origin: top left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.Tarjeta1:hover {
+    box-shadow: 0 4px 8px #c1c1c1;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.ImagenR {
+    position: relative;
+    width: 500px;
+    height: 290px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#Gif1, 
+#Gif2,
+#Gif3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 290px;
+    object-fit: cover;
+    margin-left: -90px;
+}
+
+.ImagenR1 {
+    width: 490px;
+    height: 290px;
+    object-fit: cover;
+    margin-left: -10px;
+}
+
+.OverIt1 {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    gap: 200px;
+}
+
+.Heart1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #ffff ;
+    border-radius: 14px;
+    font-size: 15px;
+    opacity: 0.8;
+    margin-right: 16px;
+    margin-top: 12px;
+}
+
+.Heart1:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Heart1:active {
+    color: #dc2929;
+}
+
+#heart0 {
+    position: relative;
+}
+
+#heartA,
+#heartB,
+#heartC,
+#heartD,
+#heartE,
+#heartF {
+    position: absolute;
+    color: #dc2929;
+}
+
+.Price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', static; 
+    font-size: 12px;
+    font-weight: 400;
+    color: #E6E9EE;
+    width: 50px;
+    height: 28px;
+    background-color: #2ABDC0;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    border-radius: 14px;
+    box-shadow: 0 2px 2px #5a5a5a;
+}
+
+.UnderIt1 {
+    margin: 20px;
+    font-family: 'Inter', sans-serif;
+    gap: 2px;
+    justify-content: flex-start;
+}
+
+#TextGen {
+    font-weight: 550;
+    font-size: 18px;
+    height: 20px;
+    margin: 0;
+}
+
+.Location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    color: #818284;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.fa-location-dot {
+    font-size: 15px;
+}
+
+#Text-L {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Stars {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    font-family: 'Inter', sans-serif;
+    gap: 5px;
+}
+
+.fa-star {
+    color: #fed258;
+    margin: 0;
+    font-size: 16px;
+}
+
+#Text5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#Text-L1 {
+    font-size: 14px;
+    color: #818284;
+}
+
+.Tarjeta2 {
+    height: 315.63px;
+    width: 310px;
+    background-color: #ffff;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid #cccccc;
+    transition: transform 0.2s ease;
+    transform-origin: top left;
+    position: relative;
+}
+
+.Tarjeta2:hover {
+    box-shadow: 0 4px 8px #c1c1c1;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.ImagenR2 {
+    width: 320px;
+    height: 190px;
+    object-fit: cover;
+    margin-left: -10px;
+}
+
+#Gif4,
+#Gif5,
+#Gif6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 190px;
+    object-fit: cover;
+    margin-left: -10px;
+}
+
+
+.OverIt2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    object-fit: cover;
+    height: 190px;
+    width: 100%;
+    align-items: flex-end;
+    gap: 100px;
+}
+
+.Heart2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #ffff ;
+    border-radius: 14px;
+    font-size: 15px;
+    opacity: 0.8;
+    margin-right: 4px;
+    margin-top: 12px;
+}
+
+.Heart2:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Price1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', static; 
+    font-size: 12px;
+    font-weight: 400;
+    color: #E6E9EE;
+    width: 50px;
+    height: 28px;
+    background-color: #2ABDC0;
+    margin-right: 4px;
+    margin-bottom: 12px;
+    border-radius: 14px;
+    box-shadow: 0 2px 2px #5a5a5a;
+}
+
+.UnderIt2 {
+    margin: 15px 20px;
+    font-family: 'Inter', sans-serif;
+    gap: 2px;
+    justify-content: flex-start;
+}
+
+.Location1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    color: #818284;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.Stars1 {
+    display: flex;
+    align-items: center;
+    height: 16px;
+    font-family: 'Inter', sans-serif;
+    gap: 5px;
+}
+
+.Tarjeta3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 135.63px;
+    width: 295px;
+    background-color: #ffff;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid #cccccc;
+    transition: transform 0.2s ease;
+    transform-origin: top left;
+    position: relative;
+}
+
+.Tarjeta3:hover {
+    box-shadow: 0 4px 8px #c1c1c1;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.UnderIt3 {
+    margin: 15px 24px;
+    font-family: 'Inter', sans-serif;
+    gap: 2px;
+    justify-content: flex-start;
+}
+
+.Location2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 20px;
+    color: #818284;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+#Iconos {
+    font-size: 40px;
+    padding-left: 24px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .Left {
+        margin-left: 30px;
+    }
+
+    .Right {
+        margin-right: 30px;
+    }
+
+    .B-A {
+        margin: 0 25px 0 25px;
+    }
+
+    .B-B {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-area: auto;
+        padding: 0px 14px;
+        min-width: 0;
+        min-height: 0;
+        box-sizing: border-box;
+        object-fit: contain;
+    }
+
+    .B-B1 {
+        height: 330px;
+    }
+
+    .B-B1,
+    .B-B2 {
+        padding: 0px 35px;
+    }
+
+    .Tarjeta1 {
+        height: 480.63px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .Tarjeta2 {
+        width: 100%;
+        height: 330px;
+    }
+    
+    .Tarjeta3 {
+    width: 100%;
+    }
+
+    .ImagenR1,
+    .ImagenR {
+    position: relative;
+    width: 550px;
+    height: 350px;
+    }
+
+    .ImagenR2 {
+        padding-left: 10px;
+        height: 210px;
+        width: 340px;
+    }
+
+    #Gif1 ,
+    #Gif2 ,
+    #Gif3 {
+    padding-left: 35px;
+    width: 590px;
+    height: 350px;
+    }
+
+    #Gif4 ,
+    #Gif5 ,
+    #Gif6 {
+    width: 340px;
+    height: 210px;
+    }
+
+    .OverIt1 {
+    height: 500px;
+    width: 100%;
+    gap: 260px;
+    }
+
+    .OverIt2 {
+    height: 210px;
+    width: 100%;
+    gap: 120px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .Top {
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0px 5px;
+    }
+
+    .Sec {
+        flex-direction: column;
+        margin: 0px 15px;
+        padding-top: 18px;
+        width: 100%;
+    }
+
+    .Sec:hover {
+        color: #626262;
+        background: none;
+    }
+
+    .Text1C {
+        margin-top: -5px;
+    }
+
+    .Left {
+        display: none;
+    }
+
+    .Top-Mid {
+        margin-top: -70px;
+    }
+
+    .B-B {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Tarjeta1 {
+        height: 680.63px;
+        width: 100%;
+    }
+
+    .B-B1  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 680px;
+        padding: 0px 10px;
+    }
+
+    .B-B2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 310px;
+        padding-bottom: 50px;
+    }
+
+    .Tarjeta2 {
+        width: 100%;
+    }
+
+    .Tarjeta3 {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+    .ImagenR1,
+    .ImagenR {
+    width: 850px;
+    height: 550px;
+    }
+
+    .ImagenR2 {
+    width: 400px;
+    height: 200px;
+    }
+
+    #Gif1 ,
+    #Gif2 ,
+    #Gif3 {
+    width: 100%;
+    height: 550px;
+    padding-left: 90px;
+    }
+
+    #Gif4 ,
+    #Gif5 ,
+    #Gif6 {
+    width: 370px;
+    height: 200px;
+    }
+
+    .OverIt1 {
+    height: 550px;
+    width: 100%;
+    gap: 460px;
+    }
+
+    .OverIt2 {
+    width: 100%;
+    height: 210px;
+    gap: 110px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .Top {
+        margin: 0px 5px;
+    }
+
+    .Sec {
+        font-size: 11px;
+        margin: 0px 10px;
+    }
+
+    .B-B {
+        padding: 0px 10px;
+    }
+
+    .B-B1  {
+        display: grid;
+        grid-template-columns:1fr;
+        padding: 0px 10px;
+        height: 100%;
+    }
+
+    .B-B2 {
+        padding: 0px 10px 50px 10px;
+    }
+
+     .ImagenR2 {
+    width: 500px;
+    height: 200px;
+    }
+
+    #Gif4 ,
+    #Gif5 ,
+    #Gif6 {
+    width: 100%;
+    height: 200px;
+    padding-left: 10px;
+    }
+}
