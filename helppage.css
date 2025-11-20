@@ -1,0 +1,163 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+.contact-section h2,
+.faq-section h2,
+.message-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.contact-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 1.4em;
+}
+
+.contact-card button {
+  background-color: #28c4b5;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.contact-card button:hover {
+  background-color: #22a99c;
+}
+
+.faq-section details {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.faq-section summary {
+  font-weight: bold;
+  font-size: 1em;
+  list-style: none;
+}
+
+.faq-section p {
+  margin-top: 8px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.message-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 0.9em;
+  color: #333;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  width: 100%;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.send-btn {
+  background-color: #28c4b5;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.send-btn:hover {
+  background-color: #22a99c;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .contact-card button {
+    align-self: stretch;
+  }
+}
