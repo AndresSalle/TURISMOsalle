@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map View | Bogotá Explorer</title>
+  <link rel="stylesheet" href="map.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <header class="header">
+    <button class="back-btn">←</button>
+    <h1>Map View</h1>
+  </header>
+
+  <main>
+    <div id="map"></div>
+
+    <div class="zoom-controls">
+      <button id="zoom-in">+</button>
+      <button id="zoom-out">-</button>
+    </div>
+
+    <div class="cards-container">
+      <div class="card">
+        <span class="tag attraction">Attraction</span>
+        <h3>Monserrate</h3>
+        <p>📍 0.5 km away</p>
+        <button class="directions-btn">Get Directions</button>
+      </div>
+
+      <div class="card">
+        <span class="tag historical">Historical</span>
+        <h3>Plaza Bolívar</h3>
+        <p>📍 0.5 km away</p>
+        <button class="directions-btn">Get Directions</button>
+      </div>
+
+      <div class="card">
+        <span class="tag museum">Museum</span>
+        <h3>Gold Museum</h3>
+        <p>📍 0.5 km away</p>
+        <button class="directions-btn">Get Directions</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const map = L.map('map').setView([4.599636, -74.074204], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Marcadores
+    L.marker([4.605, -74.063]).addTo(map).bindPopup("Monserrate");
+    L.marker([4.598, -74.078]).addTo(map).bindPopup("Plaza Bolívar");
+    L.marker([4.601, -74.072]).addTo(map).bindPopup("Gold Museum");
+
+    // Controles de zoom
+    document.getElementById('zoom-in').addEventListener('click', () => map.zoomIn());
+    document.getElementById('zoom-out').addEventListener('click', () => map.zoomOut());
+  </script>
+</body>
+</html>
